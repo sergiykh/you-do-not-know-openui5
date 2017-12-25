@@ -1,14 +1,17 @@
 > “More code, less talk”
 
 #Thanks
+
 Inspired by [You Don’t Know JS (book series)](https://github.com/getify/You-Dont-Know-JS)
 
 #Introduction
+
 A goal of my blog is do not teach you how to use [openui5 library from SAP](http://openui5.org/) in right way. The openui5 was designed to solve one issue with several possible ways. So you are able to choose.
 
 The goal is sharing my personal experience of using the library and some other web development stuff, which helps you to speed up your development using openui5.
 
 ##Pre-requirements
+
 Minimal:
 
  - MacOS, Linux or Windows operating system prepared
