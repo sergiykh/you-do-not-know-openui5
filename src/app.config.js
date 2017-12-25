@@ -21,6 +21,6 @@ window["sap-ui-config"] = {
   "xx-debugModuleLoading": false,
   "xx-debugRendering": false,
   "xx-fakeOS": "",
-  "xx-showLoadErrors": true,
-  "xx-waitForTheme": true
+  "xx-showLoadErrors": false,
+  "xx-waitForTheme": false
 };
