@@ -6,7 +6,6 @@ const proxy = require('http-proxy-middleware');
 
 module.exports =
   /**
-   * http-proxy-middleware documentation at https://github.com/chimurai/http-proxy-middleware
    * openui5 runtime/mobile-runtime/sdk packages at http://openui5.org/download.html
    */
   [
