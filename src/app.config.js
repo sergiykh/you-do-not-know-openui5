@@ -5,9 +5,6 @@
 window["sap-ui-config"] = {
   libs: "sap.m",
   theme: "gk_belize",
-  resourceRoots: {
-    "app": "app"
-  },
   preload: "sync",
   manifestFirst: true,
   bindingSyntax: "complex",
