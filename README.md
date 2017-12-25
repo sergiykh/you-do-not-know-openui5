@@ -10,6 +10,8 @@ A goal of my [blog](https://blogs.sap.com/author/skholod/) is do not teach you h
 
 The goal is sharing my personal experience of using the library and some other web development stuff, which helps you to speed up your development using openui5.
 
+All code samples are developed on MacOS environment. On other environments (Linux or Windows) process should be nearly the same.
+
 ## Pre-requirements
 
 Minimal:
@@ -24,3 +26,12 @@ Additional:
 
  - [Git client](https://git-scm.com/) (command-line or GUI) installed
  - Preferred IDE installed (for ex. [Visual Studio Code](https://code.visualstudio.com/) or [WebStorm](https://www.jetbrains.com/webstorm/))
+
+# Let's go
+
+Just few steps to start
+
+````
+yarn
+gulp
+````
