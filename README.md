@@ -6,7 +6,7 @@ Inspired by [You Don’t Know JS (book series)](https://github.com/getify/You-Do
 
 # Introduction
 
-A goal of my blog is do not teach you how to use [openui5 library from SAP](http://openui5.org/) in right way. The openui5 was designed to solve one issue with several possible ways. So you are able to choose.
+A goal of my [blog](https://blogs.sap.com/author/skholod/) is do not teach you how to use [openui5 library from SAP](http://openui5.org/) in right way. The openui5 was designed to solve one issue with several possible ways. So you are able to choose.
 
 The goal is sharing my personal experience of using the library and some other web development stuff, which helps you to speed up your development using openui5.
 
