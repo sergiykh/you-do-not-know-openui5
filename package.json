@@ -3,9 +3,7 @@
   "version": "1.0.0",
   "description": "Project for articles from https://blogs.sap.com/ (with tag you-do-not-know-openui5)",
   "main": "gulpfile.js",
-  "scripts": {
-
-  },
+  "scripts": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/sergiykh/you-do-not-know-openui5.git"
@@ -17,7 +15,7 @@
   "license": "SEE LICENSE IN LICENSE.md",
   "homepage": "https://github.com/sergiykh/you-do-not-know-openui5#readme",
   "devDependencies": {
-    "browser-sync": "^2.21.0",
+    "browser-sync": "^2.23.1",
     "gulp": "gulpjs/gulp#4.0",
     "gulp-mem": "^0.1.1",
     "http-proxy-middleware": "^0.17.4"

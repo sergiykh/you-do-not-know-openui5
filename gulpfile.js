@@ -1,7 +1,3 @@
-/**
- * @author Kholod, Serhii
- */
-
 let gulp = require('gulp');
 let browserSync = require('browser-sync');
 let GulpMem = require('gulp-mem');

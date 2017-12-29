@@ -1,10 +1,6 @@
-/**
- * @author Kholod, Serhii
- */
-
 window["sap-ui-config"] = {
   libs: "sap.m",
-  theme: "gk_belize",
+  theme: "sap_belize",
   preload: "sync",
   manifestFirst: true,
   bindingSyntax: "complex",
@@ -13,11 +9,9 @@ window["sap-ui-config"] = {
   logLevel: "NONE",
   trace: false,
   statistics: false,
-  weinreId: "",
-  weinreServer: "",
   "xx-debugModuleLoading": false,
   "xx-debugRendering": false,
   "xx-fakeOS": "",
-  "xx-showLoadErrors": false,
-  "xx-waitForTheme": false
+  "xx-showLoadErrors": true,
+  "xx-waitForTheme": true
 };
