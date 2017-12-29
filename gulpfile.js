@@ -1,19 +1,44 @@
-let gulp = require('gulp');
-let browserSync = require('browser-sync');
-let GulpMem = require('gulp-mem');
+const gulp = require('gulp');
+const browserSync = require('browser-sync');
+const babel = require('gulp-babel');
+const merge = require('merge-stream');
+const sourcemaps = require('gulp-sourcemaps');
+const replace = require('gulp-replace');
+const GulpMem = require('gulp-mem');
 
 // Configure gulp-mem plugin: base path, log
 const gulpMem = new GulpMem();
 gulpMem.serveBasePath = '/';
 gulpMem.enableLog = true;
 
+// Stream for all files except .js
 const copy = () => {
-  return gulp.src(['src/**/*']);
+  return gulp.src([
+    'src/**/*',
+    '!src/**/*js'
+  ]);
 };
 
-// Copy content of src folder to root path in-memory
+// Stream for all .js files
+const copyJs = () => {
+  let b = babel()
+    .on("error", (e) => {
+      console.log(e.stack);
+      b.end();
+    });
+  return gulp.src([
+    'src/**/*js'
+  ])
+    .pipe(sourcemaps.init())
+    .pipe(b)
+    .pipe(replace('src.', ''))
+    .pipe(replace('src/', ''))
+    .pipe(sourcemaps.write('.'))
+};
+
+// Merge two streams and copy content of src folder to root path in-memory
 gulp.task('app:build', () => {
-  return copy()
+  return merge(copy(), copyJs())
     .pipe(gulpMem.dest('/'));
 });
 

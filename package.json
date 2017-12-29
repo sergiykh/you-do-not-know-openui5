@@ -15,9 +15,16 @@
   "license": "SEE LICENSE IN LICENSE.md",
   "homepage": "https://github.com/sergiykh/you-do-not-know-openui5#readme",
   "devDependencies": {
+    "@types/openui5": "^1.40.2",
+    "babel-core": "^6.26.0",
+    "babel-preset-ui5": "^6.1.0",
     "browser-sync": "^2.23.1",
     "gulp": "gulpjs/gulp#4.0",
+    "gulp-babel": "^7.0.0",
     "gulp-mem": "^0.1.1",
-    "http-proxy-middleware": "^0.17.4"
+    "gulp-replace": "^0.6.1",
+    "gulp-sourcemaps": "^2.6.2",
+    "http-proxy-middleware": "^0.17.4",
+    "merge-stream": "^1.0.1"
   }
 }
