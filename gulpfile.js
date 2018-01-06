@@ -1,4 +1,5 @@
 const gulp = require('gulp');
+const eslint = require('gulp-eslint');
 const browserSync = require('browser-sync');
 const babel = require('gulp-babel');
 const merge = require('merge-stream');
@@ -30,6 +31,8 @@ const copyJs = () => {
     'src/**/*js'
   ])
     .pipe(sourcemaps.init())
+    .pipe(eslint())
+    .pipe(eslint.format())
     .pipe(b)
     .pipe(replace('src.', ''))
     .pipe(replace('src/', ''))
@@ -51,7 +54,8 @@ gulp.task('bs:start', (done) => {
     server: [
       '/'
     ],
-    browser: 'Chromium'
+    browser: 'Chromium',
+    open: false
   });
   done();
 });

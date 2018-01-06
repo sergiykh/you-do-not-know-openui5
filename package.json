@@ -1,7 +1,7 @@
 {
   "name": "you-do-not-know-openui5",
   "version": "1.0.0",
-  "description": "Project for articles from https://blogs.sap.com/ (with tag you-do-not-know-openui5)",
+  "description": "Project for articles from https://blogs.sap.com/",
   "main": "gulpfile.js",
   "scripts": {},
   "repository": {
@@ -17,10 +17,12 @@
   "devDependencies": {
     "@types/openui5": "^1.40.2",
     "babel-core": "^6.26.0",
+    "babel-eslint": "^8.1.2",
     "babel-preset-ui5": "^6.1.0",
     "browser-sync": "^2.23.1",
     "gulp": "gulpjs/gulp#4.0",
     "gulp-babel": "^7.0.0",
+    "gulp-eslint": "^4.0.1",
     "gulp-mem": "^0.1.1",
     "gulp-replace": "^0.6.1",
     "gulp-sourcemaps": "^2.6.2",

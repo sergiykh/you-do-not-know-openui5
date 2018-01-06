@@ -6,7 +6,6 @@ import Input from "sap/m/Input";
 import Label from "sap/m/Label";
 import Button from "sap/m/Button";
 
-
 // Create object and export as module to use in future
 export default new Page("customerDetail", {
 

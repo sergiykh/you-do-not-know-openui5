@@ -1,21 +1,27 @@
+/*eslint-disable no-unused-vars*/
 let app;
+/*eslint-enable no-unused-vars*/
 
 // Now we can use arrow functions in our code (feature of ES6)
 sap.ui.getCore().attachInit(() => {
   sap.ui.require([
-    "app/pages/Login.page",
-    "app/pages/Customers.page",
-    "app/pages/CustomerDetail.page"
-  ], (Login, Customers, CustomerDetail) => {
+    "sap/ui/core/ComponentContainer",
+    "app/Component"
+  ], (ComponentContainer, MainComponent) => {
 
-    app = new sap.m.App({
-      initialPage: "login"
+    // Our main Component of application
+    let mainComponent = new MainComponent("main-component", {
+      id: "main-component",
+      name: "app"
     });
 
-    app.addPage(Login);
-    app.addPage(Customers);
-    app.addPage(CustomerDetail);
+    // Our main Container for Component
+    let componentContainer = new ComponentContainer("main-component-container", {
+      component: mainComponent,
+      height: "100%",
+      width: "100%",
+    });
 
-    app.placeAt("content");
+    componentContainer.placeAt("content");
   });
 });

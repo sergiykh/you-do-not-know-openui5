@@ -4,7 +4,6 @@ import StandardTile from "sap/m/StandardTile";
 
 const customer = "Customer";
 
-
 // Create object and export as module to use in future
 export default new Page("customers", {
 
