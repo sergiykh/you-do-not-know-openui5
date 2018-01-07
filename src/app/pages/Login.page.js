@@ -8,9 +8,11 @@ export default new Page("login", {
   title: "Login",
   showNavButton: false,
   // Now content of Page is JSView
-  content: sap.ui.view({
-    id:"login-view",
-    type:sap.ui.core.mvc.ViewType.JS,
-    viewName:"app.views.Login"
-  })
+  // We also can use other factory function instead of sap.ui.view()
+  content: sap.ui.jsview("login-view", "app.views.Login")
+  // content: sap.ui.view({
+  //   id:"login-view",
+  //   type:sap.ui.core.mvc.ViewType.JS,
+  //   viewName:"app.views.Login"
+  // })
 })

@@ -11,9 +11,11 @@ export default new Page("customerDetail", {
     app.back();
   },
   // Now content of Page is XMLView
-  content: sap.ui.view({
-    id:"customer-detail-view",
-    type:sap.ui.core.mvc.ViewType.XML,
-    viewName:"app.views.CustomerDetail"
-  })
+  // We also can use other factory function instead of sap.ui.view()
+  content: sap.ui.xmlview("customer-detail-view", "app.views.CustomerDetail")
+  // content: sap.ui.view({
+  //   id:"customer-detail-view",
+  //   type:sap.ui.core.mvc.ViewType.XML,
+  //   viewName:"app.views.CustomerDetail"
+  // })
 })

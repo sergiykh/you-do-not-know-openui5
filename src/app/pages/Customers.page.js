@@ -11,9 +11,11 @@ export default new Page("customers", {
     app.back();
   },
   // Now content of Page is JSONView
-  content: sap.ui.view({
-    id:"customers-view",
-    type:sap.ui.core.mvc.ViewType.JSON,
-    viewName:"app.views.Customers"
-  })
+  // We also can use other factory function instead of sap.ui.view()
+  content: sap.ui.jsonview("customers-view", "app.views.Customers")
+  // content: sap.ui.view({
+  //   id:"customers-view",
+  //   type:sap.ui.core.mvc.ViewType.JSON,
+  //   viewName:"app.views.Customers"
+  // })
 })
