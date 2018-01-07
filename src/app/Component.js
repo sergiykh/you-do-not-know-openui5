@@ -15,11 +15,6 @@ export default class Component extends UIComponent {
     manifest: "json"
   }
 
-  init() {
-    super.init();
-
-  }
-
   createContent() {
 
     app = new App("app", {
