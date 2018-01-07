@@ -1,0 +1,23 @@
+{
+  "Type":"sap.ui.core.mvc.JSONView",
+  "controllerName":"app.controllers.Customers",
+  "content": {
+    "Type": "sap.m.ScrollContainer",
+    "content": [
+      {
+        "Type": "sap.m.StandardTile",
+        "icon": "sap-icon://customer",
+        "title": "Customer 1",
+        "info": "Active",
+        "press": "navToCustomerDetail"
+      },
+      {
+        "Type": "sap.m.StandardTile",
+        "icon": "sap-icon://customer",
+        "title": "Customer 2",
+        "info": "Not Active",
+        "press": "navToCustomerDetail"
+      }
+    ]
+  }
+}

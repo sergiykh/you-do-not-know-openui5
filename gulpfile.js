@@ -10,7 +10,7 @@ const GulpMem = require('gulp-mem');
 // Configure gulp-mem plugin: base path, log
 const gulpMem = new GulpMem();
 gulpMem.serveBasePath = '/';
-gulpMem.enableLog = true;
+gulpMem.enableLog = false;
 
 // Stream for all files except .js
 const copy = () => {
