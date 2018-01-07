@@ -1,4 +1,4 @@
-export default sap.ui.controller("app.controllers.Customers", {
+export default sap.ui.controller("app.controllers.CreateCustomer", {
 
   navToCustomerDetail() {
 

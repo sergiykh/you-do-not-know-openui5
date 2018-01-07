@@ -3,17 +3,17 @@
 import Page from "sap/m/Page";
 
 // Create object and export as module to use in future
-export default new Page("customers", {
+export default new Page("create-customer", {
 
-  title: "Customers",
+  title: "Create Customer",
   showNavButton: true,
   navButtonPress : function () {
     app.back();
   },
-  // Now content of Page is JSONView
+  // Now content of Page is HTMLView
   content: sap.ui.view({
-    id:"customers-view",
-    type:sap.ui.core.mvc.ViewType.JSON,
-    viewName:"app.views.Customers"
+    id:"create-customer-view",
+    type:sap.ui.core.mvc.ViewType.HTML,
+    viewName:"app.views.CreateCustomer"
   })
 })

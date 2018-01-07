@@ -2,6 +2,7 @@
 // Import openui5 modules
 import UIComponent from "sap/ui/core/UIComponent";
 import App from "sap/m/App";
+import CreateCustomer from "app/pages/CreateCustomer.page";
 import Login from "app/pages/Login.page";
 import Customers from "app/pages/Customers.page";
 import CustomerDetail from "app/pages/CustomerDetail.page";
@@ -14,6 +15,11 @@ export default class Component extends UIComponent {
     manifest: "json"
   }
 
+  init() {
+    super.init();
+
+  }
+
   createContent() {
 
     app = new App("app", {
@@ -21,6 +27,7 @@ export default class Component extends UIComponent {
     });
 
     return app
+      .addPage(CreateCustomer)
       .addPage(Login)
       .addPage(Customers)
       .addPage(CustomerDetail);
